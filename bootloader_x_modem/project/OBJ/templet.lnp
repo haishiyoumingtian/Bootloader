@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+".\obj\misc.o"
+".\obj\stm32f2xx_flash.o"
+".\obj\stm32f2xx_gpio.o"
+".\obj\stm32f2xx_rcc.o"
+".\obj\stm32f2xx_tim.o"
+".\obj\stm32f2xx_usart.o"
+".\obj\main.o"
+".\obj\stm32f2xx_it.o"
+".\obj\core_cm3.o"
+".\obj\system_stm32f2xx.o"
+".\obj\startup_stm32f2xx.o"
+".\obj\delay.o"
+".\obj\iap.o"
+".\obj\stmflash.o"
+".\obj\sys.o"
+".\obj\usart.o"
+".\obj\xmodem.o"
+--library_type=microlib --strict --scatter ".\OBJ\templet.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\templet.map" -o .\OBJ\templet.axf
